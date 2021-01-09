@@ -556,10 +556,8 @@ for tag in tagList:
                            "dijet_leadE          := VBFMVA.leadJet.energy()",
                            "dijet_subleadPhi     := VBFMVA.subleadJet.Phi()",
                            "dijet_subleadE       := VBFMVA.subleadJet.energy()",
-                           "vbfMvaResult_value   := VBFMVA.vbfMvaResult_value",
-                           "vbfMvaResult_value_bdt := VBFMVA.vbfMvaResult_value_bdt",
-                           "vbfMvaResult_value_bdtg := VBFMVA.vbfMvaResult_value_bdtg"
-                       ]
+                           "vbfDiPhoDiJetMvaResult := VBFDiPhoDiJetMVA.vbfDiPhoDiJetMvaResult"
+      ]
       cfgTools.addCategory(process.tagsDumper,
                            systlabel,
                            classname=tagName,
