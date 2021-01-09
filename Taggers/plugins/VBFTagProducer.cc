@@ -16,8 +16,6 @@
 
 #include "DataFormats/Common/interface/RefToPtr.h"
 
-#include "SimDataFormats/HTXS/interface/HiggsTemplateCrossSections.h"
-
 #include "flashgg/DataFormats/interface/PDFWeightObject.h"
 
 #include <vector>
@@ -45,8 +43,6 @@ namespace flashgg {
         EDGetTokenT<View<reco::GenParticle> >      genPartToken_;
         EDGetTokenT<View<reco::GenJet> >           genJetToken_;
         edm::EDGetTokenT<vector<flashgg::PDFWeightObject> > WeightToken_;
-
-        EDGetTokenT<HTXS::HiggsClassification> newHTXSToken_;
 
         string systLabel_;
 
@@ -83,11 +79,8 @@ namespace flashgg {
         boundaries = iConfig.getParameter<vector<double > >( "Boundaries" );
         assert( is_sorted( boundaries.begin(), boundaries.end() ) ); // we are counting on ascending order - update this to give an error message or exception
 
-        ParameterSet HTXSps = iConfig.getParameterSet( "HTXSTags" );
-        newHTXSToken_ = consumes<HTXS::HiggsClassification>( HTXSps.getParameter<InputTag>("ClassificationObj") );
-
         produces<vector<VBFTag> >();
-        produces<vector<VBFTagTruth> >();
+        //produces<vector<VBFTagTruth> >();
     }
 
     int VBFTagProducer::chooseCategory( float mvavalue )
@@ -95,6 +88,7 @@ namespace flashgg {
         // should return 0 if mva above all the numbers, 1 if below the first, ..., boundaries.size()-N if below the Nth, ...
         int n;
         for( n = 0 ; n < ( int )boundaries.size() ; n++ ) {
+            //cout << "VBFTagProducer - mvavalue is : " << mvavalue << " boundary is : " << boundaries[boundaries.size() - n - 1] << endl ;
             if( ( double )mvavalue > boundaries[boundaries.size() - n - 1] ) { return n; }
         }
         return -1; // Does not pass, object will not be produced
@@ -119,14 +113,11 @@ namespace flashgg {
             evt.getByToken( WeightToken_, WeightHandle );
         }
 
-        Handle<HTXS::HiggsClassification> htxsClassification;
-        evt.getByToken(newHTXSToken_,htxsClassification);
-
         std::unique_ptr<vector<VBFTag> >      tags  ( new vector<VBFTag> );
-        std::unique_ptr<vector<VBFTagTruth> > truths( new vector<VBFTagTruth> );
+        //std::unique_ptr<vector<VBFTagTruth> > truths( new vector<VBFTagTruth> );
 
-        unsigned int idx = 0;
-        edm::RefProd<vector<VBFTagTruth> > rTagTruth = evt.getRefBeforePut<vector<VBFTagTruth> >();
+        //unsigned int idx = 0;
+        //edm::RefProd<vector<VBFTagTruth> > rTagTruth = evt.getRefBeforePut<vector<VBFTagTruth> >();
 
         unsigned int index_leadq       = std::numeric_limits<unsigned int>::max();
         unsigned int index_subleadq    = std::numeric_limits<unsigned int>::max();
@@ -166,11 +157,8 @@ namespace flashgg {
             edm::Ptr<flashgg::VBFDiPhoDiJetMVAResult> vbfdipho_mvares = vbfDiPhoDiJetMvaResults->ptrAt( candIndex );
             edm::Ptr<flashgg::DiPhotonMVAResult>      mvares          = mvaResults->ptrAt( candIndex );
             edm::Ptr<flashgg::DiPhotonCandidate>      dipho           = diPhotons->ptrAt( candIndex );
-
-            //std::cout << "vh had costheta star is: " << VHhadMVAResults->at(candIndex).cosThetaStar << std::endl;
-            //std::cout << "vh had costheta star is: " << VHhadMVAResults->at(candIndex).VHhadMVAValue() << std::endl;
             
-            VBFTag tag_obj( dipho, mvares, vbfdipho_mvares);
+            VBFTag tag_obj( dipho, mvares, vbfdipho_mvares );
             tag_obj.setDiPhotonIndex( candIndex );
             tag_obj.setSystLabel    ( systLabel_ );
 
@@ -304,18 +292,6 @@ namespace flashgg {
             float dr_gj_subleadjet = 999.;
             VBFTagTruth truth_obj;
             if( ! evt.isRealData() ) {
-                // add HTXS info here
-                if( htxsClassification.isValid() ) { 
-                    truth_obj.setHTXSInfo( int(htxsClassification->stage0_cat),
-                                       int(htxsClassification->stage1_cat_pTjet30GeV),
-                                       int(htxsClassification->stage1_1_cat_pTjet30GeV),
-                                       int(htxsClassification->stage1_1_fine_cat_pTjet30GeV),
-                                       int(htxsClassification->stage1_2_cat_pTjet30GeV),
-                                       int(htxsClassification->stage1_2_fine_cat_pTjet30GeV),
-                                       float(htxsClassification->jets30.size()),
-                                       float(htxsClassification->p4decay_higgs.pt()),
-                                       float(htxsClassification->p4decay_V.pt()) );
-                }
                 for( unsigned int genLoop = 0 ; genLoop < genParticles->size(); genLoop++ ) {
                     edm::Ptr<reco::GenParticle> part = genParticles->ptrAt( genLoop );
                     if( part->isHardProcess() ) {
@@ -561,16 +537,17 @@ namespace flashgg {
 
             // saving the collection
             if( VBFpresel && tag_obj.categoryNumber() >= 0 ) {
+                cout << "mva is : " <<  vbfdipho_mvares->vbfDiPhoDiJetMvaResult << endl ;
                 tags->push_back( tag_obj );
-                if( ! evt.isRealData() ) {
-                    truths->push_back( truth_obj );
-                    tags->back().setTagTruth( edm::refToPtr( edm::Ref<vector<VBFTagTruth> >( rTagTruth, idx++ ) ) );
-                }
+                //if( ! evt.isRealData() ) {
+                //    truths->push_back( truth_obj );
+                //    tags->back().setTagTruth( edm::refToPtr( edm::Ref<vector<VBFTagTruth> >( rTagTruth, idx++ ) ) );
+                //}
             }
         }
 
         evt.put( std::move( tags ) );
-        evt.put( std::move( truths ) );
+        //evt.put( std::move( truths ) );
     }
 }
 

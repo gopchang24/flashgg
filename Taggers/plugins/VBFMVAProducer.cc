@@ -93,9 +93,13 @@ namespace flashgg {
         _minDijetMinv ( iConfig.getParameter<double> ( "MinDijetMinv" ) ),
         _drJetPhoton  ( iConfig.getParameter<double> ( "DrJetPhoton"  ) ),
         _pujid_wp_pt_bin_1  ( iConfig.getParameter<std::vector<double> > ( "pujidWpPtBin1" ) ),
-        _pujid_wp_pt_bin_2  ( iConfig.getParameter<std::vector<double> > ( "pujidWpPtBin2" ) )
+        _pujid_wp_pt_bin_2  ( iConfig.getParameter<std::vector<double> > ( "pujidWpPtBin2" ) ),
+        _pujid_wp_pt_bin_3  ( iConfig.getParameter<std::vector<double> > ( "pujidWpPtBin3" ) )
     {
         vbfMVAweightfile_ = iConfig.getParameter<edm::FileInPath>( "vbfMVAweightfile" );
+        //vbfMVAweightfile_ = iConfig.getParameter<edm::FileInPath>( "flashgg/Taggers/data/dijet-2017-10Jul.xml" );
+        
+        //cout << "method is : " << _MVAMethod.c_str() << ", and weight file is : " << vbfMVAweightfile_.fullPath() << endl ;
         
         dijet_leadEta_    = -999.;
         dijet_subleadEta_ = -999.;
@@ -121,7 +125,9 @@ namespace flashgg {
         dijet_subleady_   = -999.;
         
         if (_MVAMethod == "BDTG"){
+            //cout << "_MVAMethod == \"BDTG\" add variables start" << endl ;
             VbfMva_.reset( new TMVA::Reader( "!Color:Silent" ) );
+            //cout << "_MVAMethod == \"BDTG\" add variables after reset" << endl ;
             // Run 1 legacy variables
             /*
             VbfMva_->AddVariable( "dijet_LeadJPt"     , &dijet_LeadJPt_    );
@@ -135,6 +141,23 @@ namespace flashgg {
             */
             
             // Moriond17 variables
+            //cout << "_MVAMethod == \"BDTG\" add variables dijets and others" << endl ;
+
+            //original
+            /*
+            VbfMva_->AddVariable( "dijet_LeadJPt"          , &dijet_LeadJPt_       );
+            VbfMva_->AddVariable( "dijet_SubJPt"           , &dijet_SubJPt_        );
+            VbfMva_->AddVariable( "dijet_abs_dEta"         , &dijet_abs_dEta_      );
+            VbfMva_->AddVariable( "dijet_Mjj"              , &dijet_Mjj_           );
+            VbfMva_->AddVariable( "dijet_centrality_gg"    , &dijet_centrality_gg_ );
+            VbfMva_->AddVariable( "dijet_dipho_dphi_trunc" , &dijet_dphi_trunc_    );
+            VbfMva_->AddVariable( "dijet_dphi"             , &dijet_dphi_          );
+            VbfMva_->AddVariable( "dijet_minDRJetPho"      , &dijet_minDRJetPho_   );
+            VbfMva_->AddVariable( "leadPho_PToM"           , &leadPho_PToM_        );
+            VbfMva_->AddVariable( "sublPho_PToM"           , &sublPho_PToM_        );
+            */
+
+            //from cms 10_5
             VbfMva_->AddVariable( "dijet_LeadJPt"          , &dijet_LeadJPt_       );
             VbfMva_->AddVariable( "dijet_SubJPt"           , &dijet_SubJPt_        );
             VbfMva_->AddVariable( "dijet_abs_dEta"         , &dijet_abs_dEta_      );
@@ -146,7 +169,42 @@ namespace flashgg {
             VbfMva_->AddVariable( "leadPho_PToM"           , &leadPho_PToM_        );
             VbfMva_->AddVariable( "sublPho_PToM"           , &sublPho_PToM_        );
             
+            //from multi
+            /*
+            //VbfMva_->AddVariable( "dijet_LeadJPt"          , &dijet_LeadJPt_       );
+            VbfMva_->AddVariable( "dijet_LeadJPt"          , &dijet_LeadJPt_       );
+
+            //VbfMva_->AddVariable( "dijet_SubJPt"           , &dijet_SubJPt_        );
+            VbfMva_->AddVariable( "dijet_SubJPt"           , &dijet_SubJPt_        );
+
+            //VbfMva_->AddVariable( "dijet_abs_dEta"         , &dijet_abs_dEta_      );
+            VbfMva_->AddVariable( "dijet_abs_dEta"         , &dijet_abs_dEta_      );
+
+            //VbfMva_->AddVariable( "dijet_Mjj"              , &dijet_Mjj_           );
+            VbfMva_->AddVariable( "dijet_Mjj"              , &dijet_Mjj_           );
+
+            //VbfMva_->AddVariable( "dijet_centrality_gg"    , &dijet_centrality_gg_ );
+            VbfMva_->AddVariable( "dijet_centrality"       , &dijet_centrality_gg_ );
+
+            //VbfMva_->AddVariable( "dijet_dipho_dphi_trunc" , &dijet_dphi_trunc_    );
+            VbfMva_->AddVariable( "dijet_dipho_dphi_trunc" , &dijet_dphi_trunc_    );
+
+            //VbfMva_->AddVariable( "dijet_dphi"             , &dijet_dphi_          );
+            VbfMva_->AddVariable( "dijet_dphi"             , &dijet_dphi_          );
+
+            //VbfMva_->AddVariable( "dijet_minDRJetPho"      , &dijet_minDRJetPho_   );
+            VbfMva_->AddVariable( "dijet_minDRJetPho"      , &dijet_minDRJetPho_   );
+
+            //VbfMva_->AddVariable( "leadPho_PToM"           , &leadPho_PToM_        );
+            VbfMva_->AddVariable( "dipho_lead_ptoM"        , &leadPho_PToM_        );
+
+            //VbfMva_->AddVariable( "sublPho_PToM"           , &sublPho_PToM_        );
+            VbfMva_->AddVariable( "dipho_sublead_ptoM"     , &sublPho_PToM_        );
+            */
+            //cout << "_MVAMethod == \"BDTG\" add variables book mva" << endl ;            
+            //cout << "method is : " << _MVAMethod.c_str() << ", and weight file is : " << vbfMVAweightfile_.fullPath() << endl ;
             VbfMva_->BookMVA( _MVAMethod.c_str() , vbfMVAweightfile_.fullPath() );
+            //cout << "_MVAMethod == \"BDTG\" add variables end" << endl ;
         }
         else if (_MVAMethod == "Multi"){
             VbfMva_.reset( new TMVA::Reader( "!Color:Silent" ) );
@@ -252,7 +310,8 @@ namespace flashgg {
 
                 
                 if ( (!_pujid_wp_pt_bin_1.empty())  &&
-                     (!_pujid_wp_pt_bin_2.empty())  ){
+                     (!_pujid_wp_pt_bin_2.empty())  &&
+                     (!_pujid_wp_pt_bin_3.empty())  ){
                     bool pass=false;
                     for (UInt_t eta_bin=0; eta_bin < _pujid_wp_pt_bin_1.size(); eta_bin++ ){
                         if ( fabs( jet->eta() ) >  eta_cuts_[eta_bin].first &&
@@ -263,7 +322,10 @@ namespace flashgg {
                             if ( jet->pt() >  30 &&
                                  jet->pt() <= 50 && jet->puJetIdMVA() > _pujid_wp_pt_bin_2[eta_bin] )
                                 pass=true;
-                            if (jet->pt() > 50) pass = true;
+                            if ( jet->pt() >  50 &&
+                                 jet->pt() <= 100&& jet->puJetIdMVA() > _pujid_wp_pt_bin_3[eta_bin] )
+                                pass=true;
+                            if (jet->pt() > 100) pass = true;
                         }
                     }
                     //                    std::cout << inputTagJets_[0] << " pt="<< jet->pt() << " :eta: "<< jet->eta() << " :mva: "<< jet->puJetIdMVA() << "  pass == " << pass << std::endl;
@@ -434,8 +496,10 @@ namespace flashgg {
             
 
             if (_MVAMethod == "BDTG") {
+                //cout << "_MVAMethod == \"BDTG\" evaluateMVA" << endl ;
                 mvares.vbfMvaResult_value = VbfMva_->EvaluateMVA( _MVAMethod.c_str() );
                 //mvares.vbfMvaResult_value = VbfMva_->GetProba( _MVAMethod.c_str() );
+                //cout << "_MVAMethod == \"BDTG\" evaluateMVA result : " << mvares.vbfMvaResult_value << endl ;
             }
             else if (_MVAMethod == "Multi") {
                 mvares.vbfMvaResult_prob_bkg = VbfMva_->EvaluateMulticlass( 0, _MVAMethod.c_str() );

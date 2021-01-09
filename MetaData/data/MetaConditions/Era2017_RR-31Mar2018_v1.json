@@ -122,19 +122,13 @@
 
     "flashggVBFMVA" : 
     {  
-        "weightFile" : "flashgg/Taggers/data/STXSmodels/dijetDataDrivenMerged.xml",
+	"weightFile" : "flashgg/Taggers/data/dijet-2017-10Jul.xml",
         "jetID" : "Tight2017"
     },
 
     "flashggVHhadMVA" : 
     {  
         "weightFile" : "flashgg/Taggers/data/STXSmodels/vhHadDataDrivenMerged.xml",
-        "jetID" : "Tight2017"
-    },
-
-    "flashggGluGluHMVA" : 
-    {  
-        "weightFile" : "flashgg/Taggers/data/STXSmodels/nClassesGGHModel.xml",
         "jetID" : "Tight2017"
     },
 
