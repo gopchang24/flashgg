@@ -75,6 +75,10 @@ dijet_variables=[
     "dipho_dijet_MVA        :=  VBFDiPhoDiJetMVA.VBFDiPhoDiJetMVAValue()",
     "dipho_mva              :=  diPhotonMVA.mvaValue()",
     "dijet_dipho_dphi_trunc :=  VBFMVA.dijet_dipho_dphi ",
+    "dijet_leadPhi        := VBFMVA.leadJet.Phi()",
+    "dijet_leadE          := VBFMVA.leadJet.energy()",
+    "dijet_subleadPhi     := VBFMVA.subleadJet.Phi()",
+    "dijet_subleadE       := VBFMVA.subleadJet.energy()",
     # new variables
     "jet1_pt             := leadingJet.pt",
     "jet2_pt             := subLeadingJet.pt",
