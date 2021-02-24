@@ -1,0 +1,225 @@
+/cvmfs/cms.cern.ch/slc7_amd64_gcc700/external/py2-requests/2.21.0-pafccj2/lib/python2.7/site-packages/requests/__init__.py:91: RequestsDependencyWarning: urllib3 (1.25.2) or chardet (3.0.4) doesn't match a supported version!
+  RequestsDependencyWarning)
+Printing defaults
+acceptance NONE
+tthTagsOnly False
+Reading dataset (Era2017_legacy_v1) /GluGluHToGG_M125_TuneCP5_13TeV-amcatnloFXFX-pythia8_storeWeights
+Will use the following datasets catalog:
+['/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_1.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_10.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_11.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_12.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_13.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_14.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_15.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_16.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_17.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_18.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_19.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_2.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_20.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_21.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_22.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_23.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_24.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_25.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_26.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_27.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_28.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_29.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_3.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_30.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_31.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_4.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_32.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_33.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_34.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_35.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_5.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_6.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_7.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_8.json', '/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/MetaData/data/Era2017_legacy_v1/datasets_9.json']
+/GluGluHToGG_M125_TuneCP5_13TeV-amcatnloFXFX-pythia8_storeWeights
+Printing options
+acceptance NONE
+tthTagsOnly False
+here we print the tag sequence before
+flashggPrefireDiPhotons+flashggPreselectedDiPhotons+flashggDiPhotonMVA+flashggVBFMVA+flashggVHhadMVA+flashggGluGluHMVA+flashggVBFDiPhoDiJetMVA+flashggUntagged+flashggVBFTag+flashggTTHDiLeptonTag+flashggTTHLeptonicTag+flashggTHQLeptonicTag+flashggTTHHadronicTag+flashggVHMetTag+flashggWHLeptonicTag+flashggZHLeptonicTag+flashggVHHadronicTag+flashggTagSorter
+here we print the tag sequence after
+flashggPrefireDiPhotons+flashggPreselectedDiPhotons+flashggDiPhotonMVA+flashggVBFMVA+flashggVHhadMVA+flashggGluGluHMVA+flashggStageOneCombinedTag+flashggTHQLeptonicTag+flashggVHMetTag+flashggWHLeptonicTag+flashggZHLeptonicTag+flashggTagSorter
+customize.processId: ggh_125
+Here we account for L1 pre-firing. We will only change the central diphoton weight if it is an appropriate year (2016 or 2017), an appropriate sample (only MC, not data), and the applyToCentral flag is set to true
+Signal MC, so adding systematics and dZ
+--- Systematics  with independent collections ---
+['']
+-------------------------------------------------
+--- Variables to be dumped, including systematic weights ---
+['stage1p2bin[57,-8.5,48.5] := tagTruth().HTXSstage1p2orderedBin', 'CMS_hgg_mass[160,100,180]:=diPhoton().mass', 'dZ[40,-20.,20.]:=(tagTruth().genPV().z-diPhoton().vtx().z)', 'NNLOPSweight[1,-999999.,999999.] := tagTruth().weight("NNLOPSweight")', 'centralObjectWeight[1,-999999.,999999.] := centralWeight']
+------------------------------------------------------------
+--- Dumping modules that take diphotons as input: ---
+flashggZHLeptonicTag cms.InputTag("flashggPreselectedDiPhotons")
+flashggStageOneCombinedTag cms.InputTag("flashggPreselectedDiPhotons")
+flashggVBFMVA cms.InputTag("flashggPreselectedDiPhotons")
+flashggGluGluHMVA cms.InputTag("flashggPreselectedDiPhotons")
+flashggWHLeptonicTag cms.InputTag("flashggPreselectedDiPhotons")
+flashggDiPhotonMVA cms.InputTag("flashggPreselectedDiPhotons")
+flashggVHMetTag cms.InputTag("flashggPreselectedDiPhotons")
+flashggPreselectedDiPhotons cms.InputTag("flashggPrefireDiPhotons")
+flashggTTHLeptonicTag cms.InputTag("flashggPreselectedDiPhotons")
+flashggVHhadMVA cms.InputTag("flashggPreselectedDiPhotons")
+flashggTHQLeptonicTag cms.InputTag("flashggPreselectedDiPhotons")
+flashggPrefireDiPhotons cms.InputTag("flashggDiPhotonSystematics")
+flashggTagSorter cms.InputTag("flashggPreselectedDiPhotons")
+flashggTTHHadronicTag cms.InputTag("flashggPreselectedDiPhotons")
+
+-------------- DUMPING SYSTEMATIC OVERVIEW --------------
+          Systematic  Central value?   Systematic shifts?
+---------------------------------------------------------
+      MCScaleLowR9EE              NO                -1 1 
+     MCScaleHighR9EE              NO                -1 1 
+      MCScaleLowR9EB              NO                -1 1 
+     MCScaleHighR9EB              NO                -1 1 
+      MCScaleGain6EB              NO                -1 1 
+      MCScaleGain1EB              NO                -1 1 
+MaterialCentralBarrel              NO                -1 1 
+ MaterialOuterBarrel              NO                -1 1 
+     MaterialForward              NO                -1 1 
+ ShowerShapeHighR9EB              NO                -1 1 
+ ShowerShapeHighR9EE              NO                -1 1 
+  ShowerShapeLowR9EB              NO                -1 1 
+  ShowerShapeLowR9EE              NO                -1 1 
+              FNUFEB              NO                -1 1 
+              FNUFEE              NO                -1 1 
+            MvaShift              NO                -1 1 
+            PreselSF             YES                -1 1 
+      electronVetoSF             YES                -1 1 
+       TriggerWeight             YES                -1 1 
+          LooseMvaSF             YES                -1 1 
+        FracRVWeight             YES                -1 1 
+ SigmaEOverESmearing             YES                   NO
+    SigmaEOverEShift              NO                -1 1 
+---------------------------------------------------------
+  MuonMediumIDWeight             YES                -1 1 
+MuonLooseRelISOWeight             YES                -1 1 
+---------------------------------------------------------
+    ElectronIDWeight             YES                -1 1 
+  ElectronRecoWeight             YES                -1 1 
+---------------------------------------------------------
+                 JEC             YES                -1 1 
+                 JER             YES                -1 1 
+    JetBTagCutWeight             YES                -1 1 
+JetBTagReshapeWeight             YES                -1 1 
+          PUJIDShift              NO                -1 1 
+   UnmatchedPUWeight              NO                -1 1 
+---------------------------------------------------------
+------------- DUMPING 2D SYSTEMATIC OVERVIEW ------------
+          Systematic  Central value?   Systematic shifts?
+---------------------------------------------------------
+     MCSmearHighR9EE             YES       1st: 1 -1 0 0 
+                                           2nd: 0 0 1 -1 
+      MCSmearLowR9EE             YES       1st: 1 -1 0 0 
+                                           2nd: 0 0 1 -1 
+     MCSmearHighR9EB             YES       1st: 1 -1 0 0 
+                                           2nd: 0 0 1 -1 
+      MCSmearLowR9EB             YES       1st: 1 -1 0 0 
+                                           2nd: 0 0 1 -1 
+---------------------------------------------------------
+Recalculating PDF weights
+24-Feb-2021 22:55:30 CET  Initiating request to open file root://cms-xrd-global.cern.ch//store/user/alesauva/flashgg/UL2017_3/10_6_4/GluGluHToGG_M125_TuneCP5_13TeV-amcatnloFXFX-pythia8_storeWeights/UL2017_3-10_6_4-v0-RunIISummer19UL17MiniAOD-106X_mc2017_realistic_v6-v1/200718_074111/0000/myMicroAODOutputFile_49.root
+%MSG-w XrdAdaptor:  file_open 24-Feb-2021 22:55:32 CET pre-events
+Data is served from GRIF-IRFU instead of original site CERN-CMSGLOBAL-02
+%MSG
+24-Feb-2021 22:55:33 CET  Successfully opened file root://cms-xrd-global.cern.ch//store/user/alesauva/flashgg/UL2017_3/10_6_4/GluGluHToGG_M125_TuneCP5_13TeV-amcatnloFXFX-pythia8_storeWeights/UL2017_3-10_6_4-v0-RunIISummer19UL17MiniAOD-106X_mc2017_realistic_v6-v1/200718_074111/0000/myMicroAODOutputFile_49.root
+24-Feb-2021 22:55:37 CET  Initiating request to open file root://cms-xrd-global.cern.ch//store/mc/RunIISummer19UL17MiniAOD/GluGluHToGG_M125_TuneCP5_13TeV-amcatnloFXFX-pythia8_storeWeights/MINIAODSIM/106X_mc2017_realistic_v6-v1/130000/74EB1D88-03E9-184E-9DEB-07E9B41A28BA.root
+%MSG-w XrdAdaptor:  AfterFile 24-Feb-2021 22:55:40 CET pre-events
+Data is served from in2p3.fr instead of original site CERN-CMSGLOBAL-02
+%MSG
+24-Feb-2021 22:55:40 CET  Successfully opened file root://cms-xrd-global.cern.ch//store/mc/RunIISummer19UL17MiniAOD/GluGluHToGG_M125_TuneCP5_13TeV-amcatnloFXFX-pythia8_storeWeights/MINIAODSIM/106X_mc2017_realistic_v6-v1/130000/74EB1D88-03E9-184E-9DEB-07E9B41A28BA.root
+/afs/cern.ch/work/c/chjoo/public/flashgg/build_026_stxs_workspace_2017/CMSSW_10_6_8/src/flashgg/Systematics/data/SystematicsIDMVA_LegR
+
+Waiting for stacktrace completion failed: timed out waiting for GDB to complete.
+
+Current Modules:
+
+Module: non-CMSSW (crashed)
+
+A fatal system signal has occurred: ext2021-02-24 23:01:07.451976: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+[WARNING]: configuration is set to reweigh from madgraph to NNLOPS, please check this is a ggH sample
+%MSG-w LogicError:  FlashggPDFWeightProducer:flashggPDFWeightObject@beginRun  24-Feb-2021 23:01:57 CET Run: 1
+::getByLabel: An attempt was made to read a Run product before endRun() was called.
+The product is of type 'LHERunInfoProduct'.
+The specified ModuleLabel was 'externalLHEProducer'.
+The specified productInstanceName was ''.
+
+%MSG
+ This sample was generated with the following PDFs : 325300
+PDFs min and max id for MC replicas: 325301   325400
+alpha_S min and max id             :    
+----- Begin Fatal Exception 24-Feb-2021 23:01:57 CET-----------------------
+An exception of category 'StdException' occurred while
+   [0] Processing global begin Run run: 1
+   [1] Calling method for module FlashggPDFWeightProducer/'flashggPDFWeightObject'
+Exception Message:
+A std::exception was thrown.
+<unspecified file>(14): expected <
+----- End Fatal Exception -------------------------------------------------
+Rivet.Analysis.HiggsTemplateCrossSections: INFO   ====================================================== 
+Rivet.Analysis.HiggsTemplateCrossSections: INFO        Higgs Template X-Sec Categorization Tool          
+Rivet.Analysis.HiggsTemplateCrossSections: INFO                  Status Code Summary                     
+Rivet.Analysis.HiggsTemplateCrossSections: INFO   ====================================================== 
+
+
+A fatal system signal has occurred: segmentation violation
+The following is the call stack containing the origin of the signal.
+
+Wed Feb 24 23:01:57 CET 2021
+Thread 8 (Thread 0x7fadebad1700 (LWP 28357)):
+#0  0x00007fae8529fa35 in pthread_cond_wait@@GLIBC_2.3.2 () from /lib64/libpthread.so.0
+#1  0x00007fae858800ac in __gthread_cond_wait (__mutex=<optimized out>, __cond=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/gcc/7.0.0-pafccj/gcc-branches_gcc-7-branch-268351/obj/x86_64-unknown-linux-gnu/libstdc++-v3/include/x86_64-unknown-linux-gnu/bits/gthr-default.h:864
+#2  std::condition_variable::wait (this=<optimized out>, __lock=...) at ../../../../../libstdc++-v3/src/c++11/condition_variable.cc:53
+#3  0x00007fae2e813bba in Eigen::ThreadPoolTempl<tensorflow::thread::EigenEnvironment>::WorkerLoop(int) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_8/external/slc7_amd64_gcc700/lib/libtensorflow_framework.so
+#4  0x00007fae2e810687 in std::_Function_handler<void (), tensorflow::thread::EigenEnvironment::CreateThread(std::function<void ()>)::{lambda()#1}>::_M_invoke(std::_Any_data const&) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_8/external/slc7_amd64_gcc700/lib/libtensorflow_framework.so
+#5  0x00007fae85885cbf in std::execute_native_thread_routine (__p=0x7fadf82c30d0) at ../../../../../libstdc++-v3/src/c++11/thread.cc:83
+#6  0x00007fae8529bea5 in start_thread () from /lib64/libpthread.so.0
+#7  0x00007fae84fc49fd in clone () from /lib64/libc.so.6
+Thread 7 (Thread 0x7fae53ff5700 (LWP 22615)):
+#0  0x00007fae84fbed19 in syscall () from /lib64/libc.so.6
+#1  0x00007fae778bb2ee in XrdSys::LinuxSemaphore::Wait (this=0x7fae6c954bb8) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x7fae7529cfd8) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x7fae7529cfc0) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00007fae778bb4d9 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00007fae8529bea5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007fae84fc49fd in clone () from /lib64/libc.so.6
+Thread 6 (Thread 0x7fae547f6700 (LWP 22614)):
+#0  0x00007fae84fbed19 in syscall () from /lib64/libc.so.6
+#1  0x00007fae778bb2ee in XrdSys::LinuxSemaphore::Wait (this=0x7fae6c954bb8) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x7fae7529cfd8) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x7fae7529cfc0) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00007fae778bb4d9 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00007fae8529bea5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007fae84fc49fd in clone () from /lib64/libc.so.6
+Thread 5 (Thread 0x7fae54ff7700 (LWP 22613)):
+#0  0x00007fae84fbed19 in syscall () from /lib64/libc.so.6
+#1  0x00007fae778bb2ee in XrdSys::LinuxSemaphore::Wait (this=0x7fae6c954bb8) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/./XrdSys/XrdSysLinuxSemaphore.hh:161
+#2  XrdCl::SyncQueue<XrdCl::JobManager::JobHelper>::Get (this=0x7fae7529cfd8) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/./XrdCl/XrdClSyncQueue.hh:67
+#3  XrdCl::JobManager::RunJobs (this=0x7fae7529cfc0) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/XrdCl/XrdClJobManager.cc:146
+#4  0x00007fae778bb4d9 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/XrdCl/XrdClJobManager.cc:33
+#5  0x00007fae8529bea5 in start_thread () from /lib64/libpthread.so.0
+#6  0x00007fae84fc49fd in clone () from /lib64/libc.so.6
+Thread 4 (Thread 0x7fae557f8700 (LWP 22612)):
+#0  0x00007fae852a2e9d in nanosleep () from /lib64/libpthread.so.0
+#1  0x00007fae77791ded in XrdSysTimer::Wait (mills=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/XrdSys/XrdSysTimer.cc:239
+#2  0x00007fae7785c9a8 in XrdCl::TaskManager::RunTasks (this=0x7fae7215d600) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/XrdCl/XrdClTaskManager.cc:244
+#3  0x00007fae7785caf9 in RunRunnerThread (arg=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/XrdCl/XrdClTaskManager.cc:37
+#4  0x00007fae8529bea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fae84fc49fd in clone () from /lib64/libc.so.6
+Thread 3 (Thread 0x7fae55ff9700 (LWP 22611)):
+#0  0x00007fae84fc4fd3 in epoll_wait () from /lib64/libc.so.6
+#1  0x00007fae77796c27 in XrdSys::IOEvents::PollE::Begin (this=0x7fae7529d260, syncsem=<optimized out>, retcode=<optimized out>, eTxt=<optimized out>) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/./XrdSys/XrdSysIOEventsPollE.icc:213
+#2  0x00007fae77793505 in XrdSys::IOEvents::BootStrap::Start (parg=0x7ffff78a0180) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/XrdSys/XrdSysIOEvents.cc:131
+#3  0x00007fae777915e8 in XrdSysThread_Xeq (myargs=0x7fae6e0b1c40) at /build/cmsbld/auto-builds/CMSSW_10_6_0_pre4-slc7_amd64_gcc700/build/CMSSW_10_6_0_pre4-build/BUILD/slc7_amd64_gcc700/external/xrootd/4.8.5-pafccj/xrootd-4.8.5/src/XrdSys/XrdSysPthread.cc:86
+#4  0x00007fae8529bea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fae84fc49fd in clone () from /lib64/libc.so.6
+Thread 2 (Thread 0x7fae59425700 (LWP 22575)):
+#0  0x00007fae852a31d9 in waitpid () from /lib64/libpthread.so.0
+#1  0x00007fae7761c807 in edm::service::cmssw_stacktrace_fork() () from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_8/lib/slc7_amd64_gcc700/pluginFWCoreServicesPlugins.so
+#2  0x00007fae7761d2ea in edm::service::InitRootHandlers::stacktraceHelperThread() () from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_8/lib/slc7_amd64_gcc700/pluginFWCoreServicesPlugins.so
+#3  0x00007fae85885cbf in std::execute_native_thread_routine (__p=0x7fae7481f5e0) at ../../../../../libstdc++-v3/src/c++11/thread.cc:83
+#4  0x00007fae8529bea5 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fae84fc49fd in clone () from /lib64/libc.so.6
+Thread 1 (Thread 0x7fae83688480 (LWP 22469)):
+#0  0x00007fae84fb9ccd in poll () from /lib64/libc.so.6
+#1  0x00007fae7761cd37 in full_read.constprop () from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_8/lib/slc7_amd64_gcc700/pluginFWCoreServicesPlugins.so
+#2  0x00007fae7761d3cc in edm::service::InitRootHandlers::stacktraceFromThread() () from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_8/lib/slc7_amd64_gcc700/pluginFWCoreServicesPlugins.so
+#3  0x00007fae7761e438 in sig_dostack_then_abort () from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_8/lib/slc7_amd64_gcc700/pluginFWCoreServicesPlugins.so
+#4  <signal handler called>
+#5  0x00007fae34a716ac in Rivet::Analysis::numEvents() const () from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_8/external/slc7_amd64_gcc700/lib/libRivet.so
+#6  0x00007fae40e97316 in Rivet::HiggsTemplateCrossSections::printClassificationSummary() () from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_8/lib/slc7_amd64_gcc700/pluginGeneratorInterfaceRivetInterface_plugins.so
+#7  0x00007fae87eeb756 in edm::one::EDProducerBase::doEndRun(edm::RunPrincipal const&, edm::EventSetupImpl const&, edm::ModuleCallingContext const*) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_8/lib/slc7_amd64_gcc700/libFWCoreFramework.so
+#8  0x00007fae87e1b400 in edm::WorkerT<edm::one::EDProducerBase>::implDoEnd(edm::RunPrincipal const&, edm::EventSetupImpl const&, edm::ModuleCallingContext const*) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_8/lib/slc7_amd64_gcc700/libFWCoreFramework.so
+#9  0x00007fae87e14cf5 in decltype ({parm#1}()) edm::convertException::wrap<bool edm::Worker::runModule<edm::OccurrenceTraits<edm::RunPrincipal, (edm::BranchActionType)3> >(edm::OccurrenceTraits<edm::RunPrincipal, (edm::BranchActionType)3>::MyPrincipal const&, edm::EventSetupImpl const&, edm::StreamID, edm::ParentContext const&, edm::OccurrenceTraits<edm::RunPrincipal, (edm::BranchActionType)3>::Context const*)::{lambda()#1}>(bool edm::Worker::runModule<edm::OccurrenceTraits<edm::RunPrincipal, (edm::BranchActionType)3> >(edm::OccurrenceTraits<edm::RunPrincipal, (edm::BranchActionType)3>::MyPrincipal const&, edm::EventSetupImpl const&, edm::StreamID, edm::ParentContext const&, edm::OccurrenceTraits<edm::RunPrincipal, (edm::BranchActionType)3>::Context const*)::{lambda()#1}) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_8/lib/slc7_amd64_gcc700/libFWCoreFramework.so
+#10 0x00007fae87e14f13 in bool edm::Worker::runModule<edm::OccurrenceTraits<edm::RunPrincipal, (edm::BranchActionType)3> >(edm::OccurrenceTraits<edm::RunPrincipal, (edm::BranchActionType)3>::MyPrincipal const&, edm::EventSetupImpl const&, edm::StreamID, edm::ParentContext const&, edm::OccurrenceTraits<edm::RunPrincipal, (edm::BranchActionType)3>::Context const*) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_8/lib/slc7_amd64_gcc700/libFWCoreFramework.so
+#11 0x00007fae87e151f3 in std::__exception_ptr::exception_ptr edm::Worker::runModuleAfterAsyncPrefetch<edm::OccurrenceTraits<edm::RunPrincipal, (edm::BranchActionType)3> >(std::__exception_ptr::exception_ptr const*, edm::OccurrenceTraits<edm::RunPrincipal, (edm::BranchActionType)3>::MyPrincipal const&, edm::EventSetupImpl const&, edm::StreamID, edm::ParentContext const&, edm::OccurrenceTraits<edm::RunPrincipal, (edm::BranchActionType)3>::Context const*) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_8/lib/slc7_amd64_gcc700/libFWCoreFramework.so
+#12 0x00007fae87e155e3 in void edm::SerialTaskQueueChain::actionToRun<edm::Worker::RunModuleTask<edm::OccurrenceTraits<edm::RunPrincipal, (edm::BranchActionType)3> >::execute()::{lambda()#1}&>(edm::Worker::RunModuleTask<edm::OccurrenceTraits<edm::RunPrincipal, (edm::BranchActionType)3> >::execute()::{lambda()#1}&) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_8/lib/slc7_amd64_gcc700/libFWCoreFramework.so
+#13 0x00007fae87e156a1 in edm::SerialTaskQueue::QueuedTask<void edm::SerialTaskQueueChain::push<edm::Worker::RunModuleTask<edm::OccurrenceTraits<edm::RunPrincipal, (edm::BranchActionType)3> >::execute()::{lambda()#1}&>(edm::Worker::RunModuleTask<edm::OccurrenceTraits<edm::RunPrincipal, (edm::BranchActionType)3> >::execute()::{lambda()#1}&)::{lambda()#1}>::execute() () from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_8/lib/slc7_amd64_gcc700/libFWCoreFramework.so
+#14 0x00007fae86607931 in tbb::internal::custom_scheduler<tbb::internal::IntelSchedulerTraits>::local_wait_for_all (this=0x7fae820ff200, parent=..., child=<optimized out>) at ../../src/tbb/custom_scheduler.h:521
+#15 0x00007fae87e7d474 in edm::EventProcessor::endRun(edm::Hash<2> const&, unsigned int, bool, bool) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_8/lib/slc7_amd64_gcc700/libFWCoreFramework.so
+#16 0x00007fae87e7d69b in edm::EventProcessor::endUnfinishedRun(edm::Hash<2> const&, unsigned int, bool, bool, bool) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_8/lib/slc7_amd64_gcc700/libFWCoreFramework.so
+#17 0x00007fae87e7d81f in std::_Sp_counted_ptr_inplace<edm::(anonymous namespace)::RunResources, std::allocator<edm::(anonymous namespace)::RunResources>, (__gnu_cxx::_Lock_policy)2>::_M_dispose() () from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_8/lib/slc7_amd64_gcc700/libFWCoreFramework.so
+#18 0x00000000004137b6 in std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release() ()
+#19 0x00007fae87e825c8 in edm::EventProcessor::runToCompletion() () from /cvmfs/cms.cern.ch/slc7_amd64_gcc700/cms/cmssw/CMSSW_10_6_8/lib/slc7_amd64_gcc700/libFWCoreFramework.so
+#20 0x000000000040fe78 in main::{lambda()#1}::operator()() const ()
+#21 0x000000000040e142 in main ()
+
+Current Modules:
+
+Module: HTXSRivetProducer:rivetProducerHTXS (crashed)
+
+A fatal system signal has occurred: segmentation violation
